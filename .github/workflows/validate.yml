@@ -1,0 +1,26 @@
+name: Validate capstone
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  offline-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-gemini.txt
+      - run: python sql/build_seed.py
+      - run: python sql/run_sql.py
+      - run: python analysis/clean_and_eda.py
+      - run: python analysis/visualize.py
+      - run: python narrator/generate_narrative.py --offline
+      - run: python narrator/generate_narrative.py --check-sample
+      - run: python -m unittest discover -s tests -v
+      # OS-dependent font rendering is excluded from byte comparisons.
+      - run: git diff --exit-code -- data sql/seed_data.sql narrator/findings.json narrator/sample_output.txt narrator/sample_metadata.json

@@ -1,0 +1,13 @@
+{
+  "description": "Original supplied CSV blocks; UTF-8 with LF line endings and a final newline. Never edit source CSVs.",
+  "rows": {
+    "customers": 45,
+    "products": 16,
+    "orders": 180
+  },
+  "sha256": {
+    "customers": "c1fe512d50d4da7edf297a91748385ed255f74d9cbe46a3e90413d373f97da74",
+    "orders": "e732403ae1e9a523f2fa8c21dbebc9dca3bceabf451104c0dfc334a7ab207646",
+    "products": "50f4be43086fed9b2117981f59dfe0509637f347c0d68261007765639d1432f8"
+  }
+}

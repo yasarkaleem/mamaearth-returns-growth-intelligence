@@ -1,0 +1,8 @@
+Situation
+Mamaearth's cleaned discounted booked order value is ₹97,358.30, compared with the raw total of ₹99,860.20. Removing duplicate submissions explains the entire ₹2,501.90 difference. These values include returned orders and therefore measure booked demand, not realized revenue or profit. The reconciled dataset provides a consistent basis for regional ops and finance to investigate return exposure.
+
+Complication
+COD has an observed return rate of 44.4%, compared with 14.7% for CARD and 18.9% for UPI. The highest-risk segment is COD in Tier-2 cities, at 54.5%. This concentration makes a blanket payment policy less informative than a focused investigation. January's apparent revenue of ₹29,582.10 falls to ₹11,637.10 when quantity outliers are excluded. March is the peak in this sensitivity view, at ₹20,318.90. Bulk orders remain in the cleaned total because their size alone does not establish an error.
+
+Resolution
+Prioritize review of return reasons, delivery experience and order confirmation in the highest-risk payment and city segment. Test confirmation or prepaid incentives with a comparison group, tracking conversion alongside returns before expanding any intervention. Preserve customer choice until the tradeoffs are measured. Repair double-submit handling and reconcile duplicate records before finance reporting. Validate bulk orders with operations, and present both the full and outlier-corrected monthly views when planning demand. These observational findings guide investigation; they do not prove payment method causes returns. Join refund, fulfillment and product-cost records before estimating margin loss or promising savings.
